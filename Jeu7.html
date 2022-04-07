@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Jeu7.css">
+    <title>tableau</title>
+</head>
+
+<body>
+    <form method="post" action="traitement.php">
+        <fieldset id="fieldset1">
+            <legend class="legend1">Votre identité</legend>
+            <ol>
+                <li><label for="Nom">Nom :</label>
+                    <input type="text" name="Nom" id="Nom" placeholder="Nom" size="30" maxlength="10" autofocus />
+                </li>
+                <li><label for="Prénom">Prénom :</label>
+                    <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" size="30" maxlength="10" />
+                </li>
+                <li><label for="Adresse mail">Adresse mail :</label>
+                    <input type="email" name="Adresse mail" id="Adresse mail" placeholder="Adresse mail" size="30"
+                        maxlength="10" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="fieldset2">
+            <legend class="legend2">Adresse de livraison</legend>
+            <ol>
+                <li><label for="Adresse">Adresse :</label>
+                    <textarea name="Adresse" id="Adresse" rows="5" cols="25"></textarea>
+                </li>
+                <li><label for="Code postal">Code postal :</label>
+                    <input type="text" name="Code postal" id="Code postal" placeholder="Code postal" size="30"
+                        maxlength="10" />
+                </li>
+                <li><label for="Ville">Ville :</label>
+                    <input type="text" name="Ville" id="Ville" placeholder="Ville" size="30" maxlength="10" />
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset id="fieldset3">
+            <legend class="legend3">Informations de réglement</legend>
+            <ol>
+                <li><label for="Type de carte bancaire">Type de carte bancaire :</label>
+                    <ul>
+                        <li><input type="radio" name="type de carte bancaire" value="VISA" id="VISA" /> <label
+                                for="VISA">VISA</label></li>
+                        <li><input type="radio" name="type de carte bancaire" value="Mastercard" id="Mastercard" />
+                            <label for="Mastercard">Mastercard</label>
+                        </li>
+                    </ul>
+                </li>
+                <li><label for="Numéro de carte">Numéro de carte :</label>
+                    <input type="text" name="Numéro de carte" id="Numéro de carte" placeholder="Numéro de carte"
+                        size="30" maxlength="10" />
+                </li>
+                <li><label for="Code de sécurité">Code de sécurité :</label>
+                    <input type="text" name="Code de sécurité" id="Code de sécurité" placeholder="Code de sécurité"
+                        size="30" maxlength="10" />
+                </li>
+                <li><label for="Nom du titulaire">Nom du titulaire :</label>
+                    <input type="text" name="Nom du titulaire" id="Nom du titulaire" placeholder="Nom du titulaire"
+                        size="30" maxlength="10" />
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="J'achète" />
+    </form>
+
+
+</html>
